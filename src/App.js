@@ -7,7 +7,7 @@ export default React.createClass({
       text: ''
     }
   },
-  
+
   handleChange: function (e) {
     this.setState({
       text: e.target.value
@@ -55,8 +55,8 @@ deleteList: function (index){
     return (
       <div>
         <form onSubmit={this.handleSubmit}>
-        <input type="text" onChange={this.handleChange} value={this.state.text} placeholder="What needs to be done?" />
-      </form>
+          <input type="text" onChange={this.handleChange} value={this.state.text} placeholder="What needs to be done?" />
+        </form>
       <div>
         <ul>
             {this.state.list.map(function(list, i){
